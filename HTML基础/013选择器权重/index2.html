@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器权重案例3</title>
+    <style type="text/css">
+        #news {
+            list-style: none;
+            width: 370px;
+        }
+        #news li{ /* 控制边框的样式的选择器的优先级为 100 + 1 */
+            height: 40px; line-height: 40px;
+            border-bottom: dashed 1px gray;
+        }
+        #news li a {
+            color: gray;
+            text-decoration: none;
+        }
+        #news .last { /* 为了这里的类别选择器last中的样式生效，这里需要使得这个选择器的优先级 > 101 */
+           border: none; 
+        }
+    </style>
+</head>
+<body>
+    <ul id="news">
+        <li><a href="">深圳欢乐谷“欢乐干线”架空单轨车追尾事件初步调查</a></li>
+        <li><a href="">呼和浩特市公安局局长自杀身亡</a></li>
+        <li><a href="">参加完民企座谈会的24为企业家怎么说？</a></li>
+        <li><a href="">吉林大学校长李元元调任华中科技大学校长</a></li>
+        <li><a href="">父亲在坠江公交遇难，儿子含泪救援80个小时</a></li>
+        <li class="last"><a href="">结束15年旅美生涯 大熊猫“高高”回国养老</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <!--运行网页可以看到，优先级最高的是行内样式；
+        依次去掉作用在p标签上的不同选择器，发现：
+        1、优先级最高的是id选择器 #p1，如果去掉id选择器；
+        2、优先级最高的是类别选择器 pp，如果去掉类别选择器；
+        3、优先级最高的是标签选择器 p，去掉它最终作用的才是通用选择器 *-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器权重</title>
+    <style type="text/css">
+        #p1 {
+            color: blue;
+        }
+        * {
+            color: orange;
+        }
+        .pp {
+            color: green;
+        }
+        p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="pp" id="p1" style="color: slateblue;"> 
+        猜猜我是什么颜色的
+    </p>
+</body>
+</html>

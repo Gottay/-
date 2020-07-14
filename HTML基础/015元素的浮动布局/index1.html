@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素的浮动布局2</title>
+    <style type="text/css">
+        .outer {
+            height: 200px;
+        }
+        .a {
+            width: 20%;
+            background: orangered;
+        }
+        .b {
+            width: 60%;
+            background: green;
+        }
+        .c {
+            width: 20%;
+            background: blue;
+        }
+        .a, .b, .c{
+            height: 200px;
+            float: left;
+        }
+        .hh {
+            height: 360px;
+            background: #222222;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+    
+    <div class="hh"></div>
+</body>
+</html>

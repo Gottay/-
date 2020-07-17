@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>js自动数据类型转换</title>
+
+        <script type="text/javascript">
+            // var tmp = "您" + "好"; //"您好"
+            
+            // var tmp = "1" + 1; //"11"
+
+            // var tmp = "h" + true; //"htrue" 
+
+            // var tmp = "h" + undefined; //"hundefined"
+            // alert(tmp); //tmp is not defined tmp变量没有声明
+
+            // var tmp = 1 -  "2"; //-1 字符串"2"在进行加法以外的运算转成了数字2
+
+            // var tmp = 1 - "2a"; //NaN not a number "2a"转成数字NaN
+
+            var tmp = NaN - NaN;
+            alert(tmp);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
